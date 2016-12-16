@@ -1,0 +1,94 @@
+@colorBlack: #000;
+@colortopmenu: #eee;
+@colorconteiner: #f7f7f7;
+@colorhedsaidbar: #df1f26;
+@colorSubmin: #c01c21;
+@colorfooter: #d3d4d9;
+@colordropfooter: #2c2c2c;
+@colorsearch: #eee;
+@colorwhite: #f2efe5;
+@colorbuttomslid: rgba(166, 191, 210, 0.25);
+@colorsearch: #c9c9c9;
+@colorborder: #d1cfcf;
+@colorbefore: #D1D95F;
+@colorwhitehover: #FFF;
+@colordropdownfooter: #2a2a2a;
+@colorbottom: #d32127;
+
+.space-between() {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	display: flex;
+	width: 100%;
+	max-width: 950px;
+	margin: auto; 
+}
+
+.logo-style {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: 'OpenSans-LightItalic';
+	color: @colorhedsaidbar;
+	padding: 15px 0;
+}
+span {
+	color: @colorBlack;
+	}
+.sidbar-block {
+	color: @colorhedsaidbar;
+	margin-top: 25px;
+	font-size: 14px;
+	font-family: 'Roboto';
+}
+// .sidbar-title() {
+// 	text-transform: uppercase;
+// 	font-size: 18px;
+// }
+.footer-column() {
+	height: 220px;
+	width: 30%;
+	border-right: 1px solid @colorwhitehover;
+}
+.class-before() {
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 20px;
+	left: -25px;
+	top: 0px;
+}
+
+// main-mixin
+.basic-mix {
+	background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color: #565555;
+    font-size: 12px;
+}
+.mixy-price {
+	border-right: 1px solid @colorborder;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    span {
+		font-size: 14px;
+		 color: #565555
+    }
+}
+.buttom-mix {
+	text-decoration: none;
+    text-transform: uppercase;
+    color: @colorwhitehover;
+	width: 100px;
+    height: 25px;
+    text-align: center;
+    padding-top: 6px;
+    background-color: @colorbottom;
+    font-weight: bold;
+    	&:hover { 
+    		background-color: @colordropdownfooter; 
+    }
+}

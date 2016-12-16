@@ -1,0 +1,136 @@
+footer {
+	width: 100%;
+	background: linear-gradient(to right, #deeaf1, #f9efe6);
+	.line {
+		height: 50px;
+		background-image: url(../img/vector-smart-object1.png); 
+		background-position: center;
+    	background-size: cover;
+	}
+	.content {
+		 background: linear-gradient(to right, #deeaf1, #f9efe6);
+	}
+		.container {
+		height: 400px;
+		.space-between();
+		margin-top: 50px;
+		}
+	.footer-title {
+		text-transform: uppercase;
+		font-size: 18px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		width: 100%;
+	}
+	.about {
+		padding-right: 50px;
+		.footer-column();
+		.logo {
+			.logo-style;
+		}
+		p {
+			width: 220px;
+		}
+	}
+	.follow-us {
+		.footer-column();
+		width: 20%;
+		font-family: 'Roboto', sans-serif;
+		margin-left: 50px;
+		ul {
+			margin-top: 20px;
+			margin-left: 25px;
+			li{
+				&:not(:last-child) {
+					margin-bottom: 10px; 
+				}
+				a{
+					text-transform: uppercase;
+					text-decoration: none;
+					color: @colorBlack;
+					position: relative;
+					}
+				}
+			}
+			.facebook {
+				&:before {
+					.class-before;
+					background-image: url(../img/rounded-rectangle-4.png);
+				}
+			}
+			.twitter {
+				&:before {
+				.class-before;
+					background-image: url(../img/rounded-rectangle-4-copy.png);
+				}
+			}
+			.google {
+				&:before {
+				.class-before;
+					background-image: url(../img/rounded-rectangle-4-copy-2.png);
+				}
+			}
+			.instagram {
+				&:before {
+				.class-before;
+					background-image: url(../img/rounded-rectangle-4-copy-3.png);
+				}
+			}
+		}
+		.contact {
+			margin-left: 50px;
+			font-family: 'Roboto', sans-serif;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+    		height: 200px;
+			h1{ 
+				width: 100%;
+				height: 0px;
+			}
+			p{
+				line-height: 1.5;
+				width: 200px;
+			}
+			span {
+					font-weight: bold;
+				}
+		}
+	.down-line {
+		// width: 100%;
+		height: 50px;
+		background-color: @colordropdownfooter;
+		.color-line{
+			width: 100%;
+			max-width: 950px;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			line-height: 50px;
+		}
+		ul{
+			font-size: 12px;
+			list-style: square outside;
+			li{
+				display: inline-block;
+				
+				&:not(:last-child) {
+					margin-right: 10px;  
+				}
+				a{
+					text-decoration: none;
+					color: #b9b9b9;
+					font-family: 'Roboto', sans-serif;
+					&:hover{
+						color: @colorhedsaidbar;
+					}
+				}
+			}
+		}
+		p{
+			color: #7a7777;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+	}
+}

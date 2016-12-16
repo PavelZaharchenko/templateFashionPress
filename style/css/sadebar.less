@@ -1,0 +1,158 @@
+aside {
+		width: 30%;
+		border-right: solid 1px @colorborder;
+		.products {
+			margin-bottom: 30px;
+			font-size: 14px;
+			.products-title {
+				height: 40px;
+				line-height: 40px;
+				text-transform: uppercase;
+				color: @colorwhite;
+				font-family: 'Roboto', sans-serif;
+				background-color:  @colorhedsaidbar;
+				padding: 0 20px;
+			}
+			ul {
+				li {
+					height: 40px;
+					line-height: 40px;
+					border-bottom: solid 1px @colorborder;
+					padding: 0 40px;
+					cursor: pointer;
+					&:hover {
+						background-color: @colorwhitehover;
+						border-right: 4px solid @colorhedsaidbar;
+					}
+					a {
+						text-decoration: none;
+						color: @colorBlack;
+						position: relative;
+						&:before {
+							position: absolute;
+							content: '';
+							width: 0;
+							height: 0;
+						    border-top: 5px solid transparent;
+						    border-left: 5px solid @colorbefore;
+						    border-bottom: 5px solid transparent;
+						    top: 2px;
+						    left: -20px;
+						}
+					}
+				}
+			}
+		}
+		// доставка
+		.delivery {
+			width: 90%;
+			height: 200px;
+			background: linear-gradient(to bottom, #DBDBDB, @colortopmenu);
+			padding-top: 50px;
+			.icon {
+				background-image: url(../img/shape-49.png);
+				width: 36px;
+				height: 60px;
+				margin: auto;
+				position: relative;
+				&:after{
+					content: '';
+					position: absolute;
+					width: 219px;
+					height: 21px;
+					background-image: url(../img/group-18.png);
+					top: 52px;
+    				right: -97px;
+    				border-radius: 55%;
+
+				}
+			}
+			h1 {
+				font-size: 22px;
+			    margin-top: 20px;
+			    width: 190px;
+			    padding-top: 30px;
+			    margin: auto;
+			    text-align: center;
+			    color: darken(@colorborder, 25%);
+			    span {
+			    	font-weight: bold;
+			    	color: darken(@colorborder, 25%);
+			    }
+			}
+		}
+		// твиттер письма
+		.twitter-leter {
+		.sidbar-block;
+			.twitter-title {
+				text-transform: uppercase;
+				font-size: 18px;
+			}
+			ul {
+				padding: 10px 10px 10px 33px;
+				li {
+					position: relative;
+					margin-bottom: 20px;
+					line-height: 1.5;
+					font-style: italic;
+					span {
+						color: darken(@colorborder, 25%);
+					}
+					&:before {
+						content: '';
+						position: absolute;
+						width: 31px;
+						height: 23px;
+						background-image: url(../img/twitter.png);
+						left: -35px;
+
+					}
+				}
+			}
+		}
+		// отзывы
+		.our-client {
+		.sidbar-block;
+		}
+		.twitter-title {
+			text-transform: uppercase;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		p {
+			padding: 10px;
+    		background-color: @colorwhitehover;
+    		width: 250px;
+			color: @colorBlack;
+			line-height: 1.5;
+			font-style: italic;
+			color: darken(@colorborder, 25%);
+			position: relative;
+			margin-bottom: 35px;
+			&:after{
+				content: '';
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-left: 0px solid transparent;
+			    border-right: 25px solid transparent;
+			    border-top: 25px solid @colorwhitehover;
+			    bottom: -20px;
+			    left: 20px;
+			}
+		}
+		h2 {
+			color: darken(@colorborder, 25%);
+			margin-left: 40px;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				width: 26px;
+				height: 29px;
+				background-image: url(../img/icon.png);
+				top: -14px;
+    			left: -39px;
+			}
+		}
+	}
