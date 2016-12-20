@@ -138,3 +138,68 @@ main {
 		color: @colorBlack;
 	}
 }
+
+
+@media @tablets {
+    .product-list {
+        .product-item {
+            &.double {
+                width: 295px;
+                height: 300px;
+                 img {
+                    height: 200px;
+                }
+                .information{
+                    flex-wrap: wrap;
+
+                }
+                .discription{
+                    p{
+                        width: 100%;
+                        border-bottom: 1px solid @colorborder;
+                    }
+                }
+                .information {
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 90px;
+                }
+                .buy-wrapper {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media @mobile {
+    // main {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     j
+    // }
+    .product-list {
+        width: 100%;
+            &.full-view {
+                width: 100%;
+            .product-item {
+                // width: 350px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    // max-width: 50%;
+                }
+                .information {
+                    width: 50%;
+                }
+            }
+            .buttom{
+                width: 80px;
+            }
+        }
+    }
+    .product-tittle{
+        font-size: 16px;
+        margin: 10px 5px;
+    }
+}

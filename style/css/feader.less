@@ -1,5 +1,6 @@
 // Шапка
 header {
+	position: relative;
 	.container {
 		.space-between;
 	    .logo {
@@ -33,7 +34,8 @@ header {
     					position: absolute;
     					right: -5%;
     					top: -2px;
-    					background-image: url(../img/vector-smart-object-bag.png)
+    					background-image: url(../img/vector-smart-object-bag.png);
+    					background-size: 100% 100%;
 					}
 				}
 			}
@@ -44,6 +46,9 @@ header {
 		width: 100%;
 		border-top: 1px solid #52BA65;
 		background-color: @colorBlack;
+		.mobile-menu{
+			display: none;
+		}
 		.page-nav{
 			line-height: 50px;
 			color: white;
@@ -94,7 +99,10 @@ header {
     		background: url(../img/shutterstock-girl.png) center;
     		border-radius: 50%;
     		position: relative;
-    		margin-top: 50px;
+    		margin-top: 0;
+    		transform: translateY(-50%);
+   	 		top: 50%;
+   	 		background-size: 100% 100%;
     	}
     	.price-slide {
     		color: white;
@@ -102,6 +110,7 @@ header {
    	 		text-align: center;
    	 		height: 182px;
 			width: 182px;
+			background-size: 100% 100%;
 			background-image: url(../img/Boll-bac.png);
 			// margin-top: 30%;
 			position: absolute;
@@ -151,6 +160,11 @@ header {
 				font-family: 'Roboto', sans-serif;
 				color: @colorhedsaidbar;
 			}
+			img {  
+				height: 29px; 
+				width: 32px;
+				background-size: 100% 100%;
+			}
 			input {
 				height: 29px;
 				width: 245px;
@@ -179,44 +193,226 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-	.block-slider {
-		height: 660px;
-		.discription{
-			width: 38%;
-			h1 {
-				font-size: 40px;
-			}
-			p {
-				font-size: 20px;
+	header{
+		.block-slider {
+			height: 425px;
+			.discription{
+				width: 325px;
+    			margin-top: 70px;
+				h1 {
+					font-size: 40px;
+				}
+				p {
+					font-size: 20px;
+				}
 			}
 			.promo-img {
-				// margin-top: 20px;
-				// width: 450px;
-				width: 35%;
-   				background-position: -50px;
+				top: 50%;
+				left: 65px;
+				width: 350px;
+				height: 350px;
 			}
+			.price-slide {
+	    		top: 230px;
+	    		right: 285px;
+			    top: 240px;
+			    width: 130px;
+			    height: 130px;
+			    padding-top: 30px;
+			    font-size: 25px;
+    		}
 			.next {
-				right: 50px;
+				right: 5px;
+    			top: 222px;
 			}
 			.prew {
-				left: 20px;
+				left: 5px;
+    			top: 222px;
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 769px){
-    .logo {
-		padding: 15px 5px;
-	}
-	.nav{
-		padding: 10px;
+@media @tablets {
+	header{
+		.logo {
+			margin-left: 5px;
+		}
+		.nav{
+			padding: 10px;
 			.page-nav{
 				li{
 					&:not(:last-child) {
 						padding-right: 14px;
+					}
+					a{
+						font-size: 12px
+					
+					}
 				}
 			}
+		}
+		.block-slider {
+			height: 380px;
+			.discription{
+				width: 270px;
+		   		margin-top: 55px;
+		   		h1{
+		   			font-size: 35px;
+		   		}
+		   	}
+			.promo-img {
+		   	    top: 45%;
+			    left: 20px;
+			    width: 290px;
+			    height: 290px;
+			}
+			.price-slide {
+				right: 210px;
+	    		top: 240px;
+			    width: 100px;
+			    height: 100px;
+			    padding-top: 18px;
+			    font-size: 20px;
+			}
+			.slider-buttom {
+				height: 30px;
+				width: 30px;
+			}
+		}
+		.search {
+			.container {
+				padding: 5px;
+			}
+		}
+	}
+}
+
+@media @mobile {
+	header {
+		.container {	
+			.logo {
+			 	font-size: 15px;
+			 	padding: 10px 5px;
+			}
+			.buyer-bag {
+				line-height: 30px;
+				li {
+					padding: 0px 5px;
+					a{
+						font-size: 7px;
+					}
+					.bag {
+						&:after {
+							width: 12px;
+	    					height: 10px;
+						    position: absolute;
+						    right: 0px;
+						    top: 0px;
+						}
+					}
+				}
+			}
+		}
+		.nav {
+			.top-menu{
+				display: flex;
+    			flex-direction: column;
+			}
+			.mobile-menu {
+				display: block;
+				width: 20px;
+				height: 20px;
+				background-size: 100% 100%;
+				background-image: url(../img/layer-61-copy-4.png);
+	
+			}
+			.page-nav {
+				margin-top: 10px;
+				display: none;
+    			flex-direction: column;
+				line-height: 10px;
+				&.open{
+					display: flex;
+				}
+				li{
+					&:not(:last-child) {
+						margin-bottom: 5px;
+					}
+					a {
+						font-size: 12px;
+						text-transform: none;
+					}
+				}
+			}
+		}
+		.block-slider {
+			height: 350px;
+		    display: flex;
+		    flex-wrap: wrap;
+	    	.discription {
+	    		width: 100%;
+	    		margin-top: 15px;
+	    		h1 {
+	    			text-align: center;
+					font-size: 12px;
+	    		}
+	    		p {
+	    			text-align: center;
+	    			font-size: 10px;
+	    			padding-top: 10px;
+	    		}
+    		}
+    		.promo-img {
+			    top: 30%;
+			    left: 0px;
+			    width: 250px;
+			    height: 250px;
+    		}
+    		.price-slide {
+    			right: 170px;
+			    top: 215px;
+			    width: 70px;
+			    height: 70px;
+			    padding-top: 15px;
+			    font-size: 12px;
+    		}
+    		.slider-buttom {
+    			height: 20px;
+    			width: 20px;
+    		}
+    	}
+    	.search {
+    		height: 35px;
+			.container {
+				padding: 5px;
+			}
+			.finde {
+				.space-between;
+		    	line-height: 20px;
+		    	h2 {
+					text-transform: none;
+					font-size: 12px;
+					margin-right: 5px;
+				}
+				img {  
+					height: 22px; 
+					width: 22px;
+				}
+				input {
+					height: 22px;
+					width: 115px;
+					font-size: 12px;
+				}
+			}
+			.sandwich-buttom {
+			 	line-height: 20px;
+				li{
+					&.basic {
+						margin-right: 5px;
+					}
+				}
+		    }
 		}
 	}
 }

@@ -13,7 +13,11 @@ aside {
 				background-color:  @colorhedsaidbar;
 				padding: 0 20px;
 			}
+			.aside-menu {
+				display: none;
+			}
 			ul {
+				width: 100%;
 				li {
 					height: 40px;
 					line-height: 40px;
@@ -156,3 +160,101 @@ aside {
 			}
 		}
 	}
+
+@media @tablets {
+	aside {
+		p{
+			width: 190px;
+		}
+	}
+}
+
+@media @mobile {
+	aside {
+		width: 100%;
+		border: none;
+		.products {
+			margin-bottom: 0;
+			.products-title {
+				position: relative;
+				height: 30px;
+    			line-height: 30px;
+			}
+			.top-menu{
+				display: flex;
+    			flex-direction: column;
+			}
+			.aside-menu {
+				position: absolute;
+				top: 464px;
+				display: block;
+				width: 20px;
+				height: 20px;
+				background-size: 100% 100%;
+				background-image: url(../img/rectangle-18-copy.png);
+			}
+			.drop-menu {
+				// margin-top: 10px;
+				display: none;
+    			flex-direction: column;
+				line-height: 10px;
+				&.open{
+					display: flex;
+				}
+				li{
+					// &:not(:last-child) {
+					// 	margin-bottom: 5px;
+					// }
+					height: 30px;
+				    line-height: 30px;
+				    padding: 0 30px;
+					a {
+						font-size: 12px;
+						text-transform: none;
+					}
+				}
+			}
+		}
+		.delivery {
+			width: 100%;
+			padding-top: 5px;
+			height: 140px;
+			h1{
+				font-size: 20px;
+			}
+		}
+		.twitter-leter {
+			margin-top: 20px;
+    		font-size: 12px;
+			.twitter-title{
+				font-size: 14px;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			ul {
+				padding: 10px 10px 10px 40px;
+			}
+		}
+		.our-client {
+			margin-top: 0px;
+			padding: 0px 10px 0px 10px; 
+			.twitter-title{
+				font-size: 14px;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			p{
+				width: 100%;
+				font-size: 12px;
+			}
+			h2{
+				margin-bottom: 30px;
+    			border-bottom: 1px solid @colorhedsaidbar;
+			}
+		}
+	}
+}
+
+
+
+

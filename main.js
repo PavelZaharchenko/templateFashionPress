@@ -16,11 +16,18 @@ $(function(){
 
 	$('.button-up').hide();
 	$(window).scroll(function(){
-		console.log('ya');
 		if($('body').scrollTop() < 700) {
 			$('.button-up').hide();
 		} else {
 			$('.button-up').show();
 		}
+	});
+
+	$('.mobile-menu').click(function(){
+		$('.page-nav').toggleClass('open')
+	})
+
+		$('.aside-menu').click(function(){
+		$('.drop-menu').toggleClass('open')
 	})
 });
