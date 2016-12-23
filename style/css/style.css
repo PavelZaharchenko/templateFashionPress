@@ -313,11 +313,11 @@ header .search .sandwich-buttom li.full {
   }
   header .block-slider .next {
     right: 5px;
-    top: 222px;
+    top: 45%;
   }
   header .block-slider .prew {
     left: 5px;
-    top: 222px;
+    top: 45%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -475,6 +475,7 @@ header .search .sandwich-buttom li.full {
     padding: 5px;
   }
   header .search .finde {
+    margin: auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -500,10 +501,7 @@ header .search .sandwich-buttom li.full {
     font-size: 12px;
   }
   header .search .sandwich-buttom {
-    line-height: 20px;
-  }
-  header .search .sandwich-buttom li.basic {
-    margin-right: 5px;
+    display: none;
   }
 }
 aside {
@@ -684,6 +682,7 @@ aside h2:before {
     margin-bottom: 0;
   }
   aside .products .products-title {
+    text-align: center;
     position: relative;
     height: 30px;
     line-height: 30px;
@@ -702,6 +701,7 @@ aside h2:before {
   aside .products .aside-menu {
     position: absolute;
     top: 464px;
+    left: 26%;
     display: block;
     width: 20px;
     height: 20px;
@@ -743,6 +743,8 @@ aside h2:before {
   aside .twitter-leter {
     margin-top: 20px;
     font-size: 12px;
+    position: absolute;
+    top: 87%;
   }
   aside .twitter-leter .twitter-title {
     font-size: 14px;
@@ -947,6 +949,9 @@ footer .down-line p {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 480px) {
+  footer {
+    margin-top: 200px;
+  }
   footer .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1223,20 +1228,21 @@ main {
   .product-list {
     width: 100%;
   }
-  .product-list.full-view {
-    width: 100%;
+  .product-list .product-item {
+    width: 295px;
   }
-  .product-list.full-view .product-item img {
+  .product-list .product-item img {
     height: 100%;
     width: 100%;
   }
-  .product-list.full-view .product-item .information {
-    width: 50%;
+  .product-list .product-item .information {
+    width: 100%;
   }
-  .product-list.full-view .buttom {
+  .product-list .buttom {
     width: 80px;
   }
   .product-tittle {
+    text-align: center;
     font-size: 16px;
     margin: 10px 5px;
   }
