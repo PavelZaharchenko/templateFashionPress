@@ -25,9 +25,8 @@ $(function(){
 
 	$('.mobile-menu').click(function(){
 		$('.page-nav').toggleClass('open')
-	})
-
-		$('.aside-menu').click(function(){
+	});
+	$('.products-mobile .products-title').click(function(){
 		$('.drop-menu').toggleClass('open')
 	})
 });

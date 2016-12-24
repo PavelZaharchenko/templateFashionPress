@@ -1,52 +1,6 @@
 aside {
-		width: 30%;
-		border-right: solid 1px @colorborder;
-		.products {
-			margin-bottom: 30px;
-			font-size: 14px;
-			.products-title {
-				height: 40px;
-				line-height: 40px;
-				text-transform: uppercase;
-				color: @colorwhite;
-				font-family: 'Roboto', sans-serif;
-				background-color:  @colorhedsaidbar;
-				padding: 0 20px;
-			}
-			.aside-menu {
-				display: none;
-			}
-			ul {
-				width: 100%;
-				li {
-					height: 40px;
-					line-height: 40px;
-					border-bottom: solid 1px @colorborder;
-					padding: 0 40px;
-					cursor: pointer;
-					&:hover {
-						background-color: @colorwhitehover;
-						border-right: 4px solid @colorhedsaidbar;
-					}
-					a {
-						text-decoration: none;
-						color: @colorBlack;
-						position: relative;
-						&:before {
-							position: absolute;
-							content: '';
-							width: 0;
-							height: 0;
-						    border-top: 5px solid transparent;
-						    border-left: 5px solid @colorbefore;
-						    border-bottom: 5px solid transparent;
-						    top: 2px;
-						    left: -20px;
-						}
-					}
-				}
-			}
-		}
+	width: 30%;
+	border-right: solid 1px @colorborder;
 		// доставка
 		.delivery {
 			width: 90%;
@@ -68,7 +22,6 @@ aside {
 					top: 52px;
     				right: -97px;
     				border-radius: 55%;
-
 				}
 			}
 			h1 {
@@ -115,56 +68,120 @@ aside {
 			}
 		}
 		// отзывы
-		.our-client {
-		.sidbar-block;
+	.our-client {
+	.sidbar-block;
+	}
+	.twitter-title {
+		text-transform: uppercase;
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	p {
+		padding: 10px;
+		background-color: @colorwhitehover;
+		width: 250px;
+		color: @colorBlack;
+		line-height: 1.5;
+		font-style: italic;
+		color: darken(@colorborder, 25%);
+		position: relative;
+		margin-bottom: 35px;
+		&:after{
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-left: 0px solid transparent;
+		    border-right: 25px solid transparent;
+		    border-top: 25px solid @colorwhitehover;
+		    bottom: -20px;
+		    left: 20px;
 		}
-		.twitter-title {
-			text-transform: uppercase;
-			font-size: 18px;
-			margin-bottom: 20px;
+	}
+	h2 {
+		color: darken(@colorborder, 25%);
+		margin-left: 40px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 26px;
+			height: 29px;
+			background-image: url(../img/icon.png);
+			top: -14px;
+			left: -39px;
 		}
-		p {
-			padding: 10px;
-    		background-color: @colorwhitehover;
-    		width: 250px;
-			color: @colorBlack;
-			line-height: 1.5;
-			font-style: italic;
-			color: darken(@colorborder, 25%);
-			position: relative;
-			margin-bottom: 35px;
-			&:after{
-				content: '';
-				position: absolute;
-				width: 0;
-				height: 0;
-				border-left: 0px solid transparent;
-			    border-right: 25px solid transparent;
-			    border-top: 25px solid @colorwhitehover;
-			    bottom: -20px;
-			    left: 20px;
+	}
+}
+.products,
+.products-mobile {
+	margin-bottom: 30px;
+	font-size: 14px;
+	.products-title {
+		height: 40px;
+		line-height: 40px;
+		text-transform: uppercase;
+		color: @colorwhite;
+		font-family: 'Roboto', sans-serif;
+		background-color:  @colorhedsaidbar;
+		padding: 0 20px;
+	}
+	.aside-menu {
+		display: none;
+	}
+	ul {
+		width: 100%;
+		li {
+			height: 40px;
+			line-height: 40px;
+			border-bottom: solid 1px @colorborder;
+			padding: 0 40px;
+			cursor: pointer;
+			&:hover {
+				background-color: @colorwhitehover;
+				border-right: 4px solid @colorhedsaidbar;
 			}
-		}
-		h2 {
-			color: darken(@colorborder, 25%);
-			margin-left: 40px;
-			position: relative;
-			&:before {
-				content: '';
-				position: absolute;
-				width: 26px;
-				height: 29px;
-				background-image: url(../img/icon.png);
-				top: -14px;
-    			left: -39px;
+			a {
+				text-decoration: none;
+				color: @colorBlack;
+				position: relative;
+				&:before {
+					position: absolute;
+					content: '';
+					width: 0;
+					height: 0;
+				    border-top: 5px solid transparent;
+				    border-left: 5px solid @colorbefore;
+				    border-bottom: 5px solid transparent;
+				    top: 2px;
+				    left: -20px;
+				}
 			}
 		}
 	}
+}
+.products-mobile {
+	display: none;
+}
 
 @media @tablets {
 	aside {
 		p{
 			width: 190px;
+		}
+		.delivery {
+			width: 100%;
+			.icon {
+				&:after{
+					width: 190px;
+					top: 52px;
+    				right: -68px;
+				}
+			}
+		}
+		.twitter-leter,
+		.our-client {
+			padding-left: 10px;
 		}
 	}
 }
@@ -173,53 +190,13 @@ aside {
 	aside {
 		width: 100%;
 		border: none;
-		.products {
-			margin-bottom: 0;
-			.products-title {
-				text-align: center; 
-				position: relative;
-				height: 30px;
-    			line-height: 30px;
-			}
-			.top-menu{
-				display: flex;
-    			flex-direction: column;
-			}
-			.aside-menu {
-				position: absolute;
-				top: 464px;
-				left: 26%;
-				display: block;
-				width: 20px;
-				height: 20px;
-				background-size: 100% 100%;
-				background-image: url(../img/rectangle-18-copy.png);
-			}
-			.drop-menu {
-				// margin-top: 10px;
-				display: none;
-    			flex-direction: column;
-				line-height: 10px;
-				&.open{
-					display: flex;
-				}
-				li{
-					height: 30px;
-				    line-height: 30px;
-				    padding: 0 30px;
-					a {
-						font-size: 12px;
-						text-transform: none;
-					}
-				}
-			}
+		.products{
+			display: none;
 		}
 		.delivery {
 			width: 100%;
 			padding-top: 5px;
 			height: 180px;
-			position: absolute;
-    		top: 81%;
 			h1{
 				font-size: 20px;
 			}
@@ -227,8 +204,6 @@ aside {
 		.twitter-leter {
 			margin-top: 20px;
     		font-size: 12px;
-    		position: absolute;
-    		top: 84%;
 			.twitter-title{
 				font-size: 14px;
 				text-align: center;
@@ -239,8 +214,6 @@ aside {
 			}
 		}
 		.our-client {
-			position: absolute;
-    		top: 88%;
 			margin-top: 0px;
 			padding: 0px 10px 0px 10px; 
 			.twitter-title{
@@ -255,6 +228,48 @@ aside {
 			h2{
 				margin-bottom: 30px;
     			border-bottom: 1px solid @colorhedsaidbar;
+			}
+		}
+	}
+	.products-mobile {
+		margin-bottom: 20px;
+		.products-title {
+			text-align: center; 
+			position: relative;
+			height: 30px;
+			line-height: 30px;
+		}
+		// .products-menu{
+		// 	display: none !important;
+		// 	flex-direction: column;
+		// }
+		.aside-menu {
+			display: none;
+			// position: absolute;
+			// top: 464px;
+			// left: 26%;
+			// display: block;
+			// width: 20px;
+			// height: 20px;
+			// background-size: 100% 100%;
+			// background-image: url(../img/rectangle-18-copy.png);
+		}
+		.drop-menu {
+			// margin-top: 10px;
+			display: none;
+			flex-direction: column;
+			line-height: 10px;
+			&.open{
+				display: flex;
+			}
+			li{
+				height: 30px;
+			    line-height: 30px;
+			    padding: 0 30px;
+				a {
+					font-size: 12px;
+					text-transform: none;
+				}
 			}
 		}
 	}
