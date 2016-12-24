@@ -735,7 +735,9 @@ aside h2:before {
   aside .delivery {
     width: 100%;
     padding-top: 5px;
-    height: 140px;
+    height: 180px;
+    position: absolute;
+    top: 81%;
   }
   aside .delivery h1 {
     font-size: 20px;
@@ -744,7 +746,7 @@ aside h2:before {
     margin-top: 20px;
     font-size: 12px;
     position: absolute;
-    top: 87%;
+    top: 84%;
   }
   aside .twitter-leter .twitter-title {
     font-size: 14px;
@@ -755,6 +757,8 @@ aside h2:before {
     padding: 10px 10px 10px 40px;
   }
   aside .our-client {
+    position: absolute;
+    top: 88%;
     margin-top: 0px;
     padding: 0px 10px 0px 10px;
   }
@@ -950,7 +954,7 @@ footer .down-line p {
 }
 @media only screen and (max-width: 480px) {
   footer {
-    margin-top: 200px;
+    margin-top: 650px;
   }
   footer .container {
     display: -webkit-box;
