@@ -18,6 +18,27 @@
 @mobile: ~"only screen and (max-width: 480px)";
 @tablets: ~"only screen and (max-width: 768px)";
 
+*{
+	box-sizing: border-box;
+	font-size: 0;
+}
+body {
+    position: relative;
+}
+.button-up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url(../img/arrow.png) @colorbuttomslid center no-repeat;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    &:hover{
+        background-color: @colorhedsaidbar;
+    }
+}
 .space-between() {
 	display: flex;
 	justify-content: space-between;

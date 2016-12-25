@@ -26,7 +26,15 @@ $(function(){
 	$('.mobile-menu').click(function(){
 		$('.page-nav').toggleClass('open')
 	});
-	$('.products-mobile .products-title').click(function(){
+	$('.is-mobile .products-title').click(function(){
 		$('.drop-menu').toggleClass('open')
+	})
+
+	$(window).resize(function(){
+  		if (window.matchMedia("(max-width: 480px)").matches) {
+   			$('.js-double').removeClass('double');
+  		} else {
+   			$('.js-double').addClass('double');
+  		}
 	})
 });

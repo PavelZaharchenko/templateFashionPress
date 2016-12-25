@@ -113,56 +113,7 @@ aside {
 		}
 	}
 }
-.products,
-.products-mobile {
-	margin-bottom: 30px;
-	font-size: 14px;
-	.products-title {
-		height: 40px;
-		line-height: 40px;
-		text-transform: uppercase;
-		color: @colorwhite;
-		font-family: 'Roboto', sans-serif;
-		background-color:  @colorhedsaidbar;
-		padding: 0 20px;
-	}
-	.aside-menu {
-		display: none;
-	}
-	ul {
-		width: 100%;
-		li {
-			height: 40px;
-			line-height: 40px;
-			border-bottom: solid 1px @colorborder;
-			padding: 0 40px;
-			cursor: pointer;
-			&:hover {
-				background-color: @colorwhitehover;
-				border-right: 4px solid @colorhedsaidbar;
-			}
-			a {
-				text-decoration: none;
-				color: @colorBlack;
-				position: relative;
-				&:before {
-					position: absolute;
-					content: '';
-					width: 0;
-					height: 0;
-				    border-top: 5px solid transparent;
-				    border-left: 5px solid @colorbefore;
-				    border-bottom: 5px solid transparent;
-				    top: 2px;
-				    left: -20px;
-				}
-			}
-		}
-	}
-}
-.products-mobile {
-	display: none;
-}
+
 
 @media @tablets {
 	aside {
@@ -190,12 +141,10 @@ aside {
 	aside {
 		width: 100%;
 		border: none;
-		.products{
-			display: none;
-		}
+
 		.delivery {
 			width: 100%;
-			padding-top: 5px;
+			padding-top: 20px;
 			height: 180px;
 			h1{
 				font-size: 20px;
@@ -231,48 +180,7 @@ aside {
 			}
 		}
 	}
-	.products-mobile {
-		margin-bottom: 20px;
-		.products-title {
-			text-align: center; 
-			position: relative;
-			height: 30px;
-			line-height: 30px;
-		}
-		// .products-menu{
-		// 	display: none !important;
-		// 	flex-direction: column;
-		// }
-		.aside-menu {
-			display: none;
-			// position: absolute;
-			// top: 464px;
-			// left: 26%;
-			// display: block;
-			// width: 20px;
-			// height: 20px;
-			// background-size: 100% 100%;
-			// background-image: url(../img/rectangle-18-copy.png);
-		}
-		.drop-menu {
-			// margin-top: 10px;
-			display: none;
-			flex-direction: column;
-			line-height: 10px;
-			&.open{
-				display: flex;
-			}
-			li{
-				height: 30px;
-			    line-height: 30px;
-			    padding: 0 30px;
-				a {
-					font-size: 12px;
-					text-transform: none;
-				}
-			}
-		}
-	}
+	
 }
 
 
